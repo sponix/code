@@ -11,7 +11,6 @@
 include('mysqli_connect.php');
 echo 'connected to the database' . '<br>';
 
-
 $res=mysqli_query($db, "select name,continent,lifeexpectancy from country where continent='North America' order by lifeexpectancy desc");
 echo 'query worked' . '<br>';
 
